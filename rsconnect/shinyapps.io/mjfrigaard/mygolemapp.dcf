@@ -1,0 +1,11 @@
+name: mygolemapp
+title:
+username:
+account: mjfrigaard
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8775458
+bundleId: 7054081
+url: https://mjfrigaard.shinyapps.io/mygolemapp/
+when: 1680721605.65284
+lastSyncTime: 1680721605.65285
