@@ -1,6 +1,6 @@
 #' plot UI Function
 #'
-#' @param id
+#' @param id module namespace id
 #'
 #' @return shiny UI module
 #' @export mod_plot_ui
@@ -17,7 +17,7 @@ mod_plot_ui <- function(id) {
 
 #' plot Server Functions
 #'
-#' @param id module id
+#' @param id module namespace id
 #' @param var_inputs inputs from mod_var
 #'
 #' @return shiny server module

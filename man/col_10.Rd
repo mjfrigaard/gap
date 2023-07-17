@@ -6,7 +6,9 @@
 \usage{
 col_10(...)
 }
+\arguments{
+\item{...}{arguments from \code{shiny::column()}}
+}
 \description{
 Column wrapper (10)
 }
-\keyword{internal}

@@ -6,7 +6,9 @@
 \usage{
 rvtl(...)
 }
+\arguments{
+\item{...}{arguments from \code{shiny::reactiveValuesToList()}}
+}
 \description{
 Typing reactiveValuesToList is too long
 }
-\keyword{internal}

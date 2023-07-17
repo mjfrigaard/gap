@@ -2,7 +2,7 @@
 #'
 #' @description A shiny Module.
 #'
-#' @param id
+#' @param id module namespace id
 #'
 #' @return shiny UI module
 #' @export mod_var_ui
@@ -70,7 +70,7 @@ mod_var_ui <- function(id) {
 
 #' var_input Server Functions
 #'
-#' @param id
+#' @param id module namespace id
 #'
 #' @return shiny server module
 #' @export mod_var_server

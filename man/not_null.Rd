@@ -6,7 +6,9 @@
 \usage{
 not_null(x)
 }
+\arguments{
+\item{x}{object}
+}
 \description{
 Inverted versions of is.null
 }
-\keyword{internal}

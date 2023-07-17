@@ -6,8 +6,10 @@
 \usage{
 col_12(...)
 }
+\arguments{
+\item{...}{arguments from \code{shiny::column()}}
+}
 \description{
 These are convenient wrappers around
-`column(12, ...)`
+\code{column(12, ...)}
 }
-\keyword{internal}

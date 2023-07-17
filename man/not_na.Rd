@@ -6,7 +6,9 @@
 \usage{
 not_na(x)
 }
+\arguments{
+\item{x}{object}
+}
 \description{
 Inverted versions of in is.na
 }
-\keyword{internal}

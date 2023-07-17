@@ -6,6 +6,9 @@
 \usage{
 col_6(...)
 }
+\arguments{
+\item{...}{arguments from \code{shiny::column()}}
+}
 \description{
 Column wrapper (6)
 }

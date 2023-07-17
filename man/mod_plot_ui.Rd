@@ -7,7 +7,7 @@
 mod_plot_ui(id)
 }
 \arguments{
-\item{id}{}
+\item{id}{module namespace id}
 }
 \value{
 shiny UI module

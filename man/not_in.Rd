@@ -6,6 +6,11 @@
 \usage{
 x \%not_in\% y
 }
+\arguments{
+\item{x}{object 1}
+
+\item{y}{object 2}
+}
 \description{
 Inverted versions of in, is.null and is.na
 }
@@ -13,4 +18,3 @@ Inverted versions of in, is.null and is.na
 1 \%not_in\% 1:10
 
 }
-\keyword{internal}

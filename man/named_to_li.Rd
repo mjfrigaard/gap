@@ -6,7 +6,11 @@
 \usage{
 named_to_li(list, class = NULL)
 }
+\arguments{
+\item{list}{a list}
+
+\item{class}{class of object}
+}
 \description{
 Names list
 }
-\keyword{internal}

@@ -20,4 +20,3 @@ Turn an R list into an HTML list
 \examples{
 list_to_li(c("a", "b"))
 }
-\keyword{internal}

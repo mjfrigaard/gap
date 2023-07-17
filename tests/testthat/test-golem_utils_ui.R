@@ -19,12 +19,10 @@ test_that("Test list_to_li works", {
 })
 
 test_that("Test list_to_p works", {
-  expect_s3_class(
-    list_to_p(c(
+  expect_s3_class(object = list_to_p(c(
       "This is the first paragraph",
       "this is the second paragraph"
-    )),
-    "shiny.tag.list"
+    )), class = "shiny.tag.list"
   )
   expect_equal(
     as.character(

@@ -7,7 +7,7 @@
 mod_var_server(id)
 }
 \arguments{
-\item{id}{}
+\item{id}{module namespace id}
 }
 \value{
 shiny server module

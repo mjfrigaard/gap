@@ -7,7 +7,7 @@
 mod_plot_server(id, var_inputs)
 }
 \arguments{
-\item{id}{module id}
+\item{id}{module namespace id}
 
 \item{var_inputs}{inputs from mod_var}
 }

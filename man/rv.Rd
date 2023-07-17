@@ -7,10 +7,8 @@
 rv(...)
 }
 \arguments{
-\item{...}{Objects that will be added to the reactivevalues object. All of
-these objects must be named.}
+\item{...}{arguments from \code{shiny::reactiveValues()}}
 }
 \description{
 Typing reactiveValues is too long
 }
-\keyword{internal}

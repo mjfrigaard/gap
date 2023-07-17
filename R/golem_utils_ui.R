@@ -5,7 +5,7 @@
 #'
 #' @return an HTML list
 #'
-#' @keywords internal
+#' @export list_to_li
 #'
 #' @examples
 #' list_to_li(c("a", "b"))
@@ -42,7 +42,7 @@ list_to_li <- function(list, class = NULL) {
 #'
 #' @return An HTML tag
 #'
-#' @keywords internal
+#' @export list_to_p
 #'
 #' @examples
 #' list_to_p(c("This is the first paragraph", "this is the second paragraph"))
@@ -75,7 +75,10 @@ list_to_p <- function(list, class = NULL) {
 }
 #' Names list
 #'
-#' @keywords internal
+#' @export named_to_li
+#'
+#' @param list a list
+#' @param class class of object
 #'
 #' @importFrom shiny tags tagAppendAttributes tagList
 named_to_li <- function(list, class = NULL) {
@@ -126,7 +129,7 @@ named_to_li <- function(list, class = NULL) {
 #'
 #' @return a new tag
 #'
-#' @keywords internal
+#' @export tagRemoveAttributes
 #'
 #' @examples
 #' a <- shiny::tags$p(src = "plop", "pouet")
@@ -145,7 +148,7 @@ tagRemoveAttributes <- function(tag, ...) {
 #'
 #' @return a tag
 #'
-#' @keywords internal
+#' @export undisplay
 #'
 #' @examples
 #' ## Hide
@@ -172,7 +175,9 @@ undisplay <- function(tag) {
 
 #' Display
 #'
-#' @keywords internal
+#' @export display
+#'
+#' @param tag html tag
 #'
 #' @importFrom shiny tagList
 display <- function(tag) {
@@ -193,7 +198,7 @@ display <- function(tag) {
 #'
 #' @param id the id of the element to hide
 #'
-#' @keywords internal
+#' @export jq_hide
 #'
 #' @importFrom shiny tags
 jq_hide <- function(id) {
@@ -209,7 +214,7 @@ jq_hide <- function(id) {
 #'
 #' @return an html element
 #'
-#' @keywords internal
+#' @export with_red_star
 #'
 #' @examples
 #' with_red_star("Enter your name here")
@@ -236,7 +241,7 @@ with_red_star <- function(text) {
 #'
 #' @return the number of br specified in times
 #'
-#' @keywords internal
+#' @export
 #'
 #' @examples
 #' rep_br(5)
@@ -252,7 +257,7 @@ rep_br <- function(times = 1) {
 #'
 #' @return an a tag
 #'
-#' @keywords internal
+#' @export
 #'
 #' @examples
 #' enurl("https://www.thinkr.fr", "ThinkR")
@@ -266,7 +271,9 @@ enurl <- function(url, text) {
 #' These are convenient wrappers around
 #' `column(12, ...)`
 #'
-#' @keywords internal
+#' @param ... arguments from `shiny::column()`
+#'
+#' @export
 #'
 #' @importFrom shiny column
 col_12 <- function(...) {
@@ -275,7 +282,9 @@ col_12 <- function(...) {
 
 #' Column wrapper (10)
 #'
-#' @keywords internal
+#' @param ... arguments from `shiny::column()`
+#'
+#' @export
 #'
 #' @importFrom shiny column
 col_10 <- function(...) {
@@ -284,7 +293,9 @@ col_10 <- function(...) {
 
 #' Column wrapper (8)
 #'
-#' @keywords internal
+#' @param ... arguments from `shiny::column()`
+#'
+#' @export
 #'
 #' @importFrom shiny column
 col_8 <- function(...) {
@@ -292,6 +303,8 @@ col_8 <- function(...) {
 }
 
 #' Column wrapper (6)
+#'
+#' @param ... arguments from `shiny::column()`
 #'
 #' @keywords internal
 #'
@@ -302,7 +315,9 @@ col_6 <- function(...) {
 
 #' Column wrapper (4)
 #'
-#' @keywords internal
+#' @param ... arguments from `shiny::column()`
+#'
+#' @export
 #'
 #' @importFrom shiny column
 col_4 <- function(...) {
@@ -311,7 +326,9 @@ col_4 <- function(...) {
 
 #' Column wrapper (3)
 #'
-#' @keywords internal
+#' @param ... arguments from `shiny::column()`
+#'
+#' @export
 #'
 #' @importFrom shiny column
 col_3 <- function(...) {
@@ -320,7 +337,9 @@ col_3 <- function(...) {
 
 #' Column wrapper (2)
 #'
-#' @keywords internal
+#' @param ... arguments from `shiny::column()`
+#'
+#' @export
 #'
 #' @importFrom shiny column
 col_2 <- function(...) {
@@ -329,7 +348,9 @@ col_2 <- function(...) {
 
 #' Column wrapper (1)
 #'
-#' @keywords internal
+#' @param ... arguments from `shiny::column()`
+#'
+#' @export
 #'
 #' @importFrom shiny column
 col_1 <- function(...) {
@@ -348,7 +369,7 @@ col_1 <- function(...) {
 #'
 #' @return The modified tag with an extra id and the action button class.
 #'
-#' @keywords internal
+#' @export
 #'
 #' @examples
 #' if (interactive()) {
@@ -419,7 +440,7 @@ make_action_button <- function(tag, inputId = NULL) {
 #' #'
 #' #' @rdname includeRMarkdown
 #' #'
-#' #' @keywords internal
+#' #' @export includeRMarkdown
 #' #'
 #' #' @importFrom rmarkdown render
 #' #' @importFrom markdown markdownToHTML

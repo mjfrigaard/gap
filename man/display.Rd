@@ -6,7 +6,9 @@
 \usage{
 display(tag)
 }
+\arguments{
+\item{tag}{html tag}
+}
 \description{
 Display
 }
-\keyword{internal}
