@@ -20,3 +20,4 @@ Create an url
 \examples{
 enurl("https://www.thinkr.fr", "ThinkR")
 }
+\keyword{internal}

@@ -24,3 +24,4 @@ If unset, "default".}
 \description{
 Read App Config
 }
+\keyword{internal}

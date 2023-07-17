@@ -4,7 +4,8 @@
 #' @param class a class for the list
 #'
 #' @return an HTML list
-#' @export
+#'
+#' @keywords internal
 #'
 #' @examples
 #' list_to_li(c("a", "b"))
@@ -40,7 +41,8 @@ list_to_li <- function(list, class = NULL) {
 #' @param class a class for the paragraph tags
 #'
 #' @return An HTML tag
-#' @export
+#'
+#' @keywords internal
 #'
 #' @examples
 #' list_to_p(c("This is the first paragraph", "this is the second paragraph"))
@@ -73,7 +75,7 @@ list_to_p <- function(list, class = NULL) {
 }
 #' Names list
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny tags tagAppendAttributes tagList
 named_to_li <- function(list, class = NULL) {
@@ -123,7 +125,8 @@ named_to_li <- function(list, class = NULL) {
 #' @param ... the attributes to remove
 #'
 #' @return a new tag
-#' @export
+#'
+#' @keywords internal
 #'
 #' @examples
 #' a <- shiny::tags$p(src = "plop", "pouet")
@@ -141,7 +144,8 @@ tagRemoveAttributes <- function(tag, ...) {
 #' @param tag the tag
 #'
 #' @return a tag
-#' @export
+#'
+#' @keywords internal
 #'
 #' @examples
 #' ## Hide
@@ -168,7 +172,7 @@ undisplay <- function(tag) {
 
 #' Display
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny tagList
 display <- function(tag) {
@@ -189,7 +193,7 @@ display <- function(tag) {
 #'
 #' @param id the id of the element to hide
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny tags
 jq_hide <- function(id) {
@@ -204,7 +208,8 @@ jq_hide <- function(id) {
 #' @param text the HTLM text to put before the red star
 #'
 #' @return an html element
-#' @export
+#'
+#' @keywords internal
 #'
 #' @examples
 #' with_red_star("Enter your name here")
@@ -230,7 +235,8 @@ with_red_star <- function(text) {
 #' @param times the number of br to return
 #'
 #' @return the number of br specified in times
-#' @export
+#'
+#' @keywords internal
 #'
 #' @examples
 #' rep_br(5)
@@ -245,7 +251,8 @@ rep_br <- function(times = 1) {
 #' @param text the text to display
 #'
 #' @return an a tag
-#' @export
+#'
+#' @keywords internal
 #'
 #' @examples
 #' enurl("https://www.thinkr.fr", "ThinkR")
@@ -259,7 +266,7 @@ enurl <- function(url, text) {
 #' These are convenient wrappers around
 #' `column(12, ...)`
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny column
 col_12 <- function(...) {
@@ -268,7 +275,7 @@ col_12 <- function(...) {
 
 #' Column wrapper (10)
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny column
 col_10 <- function(...) {
@@ -277,7 +284,7 @@ col_10 <- function(...) {
 
 #' Column wrapper (8)
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny column
 col_8 <- function(...) {
@@ -286,7 +293,7 @@ col_8 <- function(...) {
 
 #' Column wrapper (6)
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny column
 col_6 <- function(...) {
@@ -295,7 +302,7 @@ col_6 <- function(...) {
 
 #' Column wrapper (4)
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny column
 col_4 <- function(...) {
@@ -304,7 +311,7 @@ col_4 <- function(...) {
 
 #' Column wrapper (3)
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny column
 col_3 <- function(...) {
@@ -313,7 +320,7 @@ col_3 <- function(...) {
 
 #' Column wrapper (2)
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny column
 col_2 <- function(...) {
@@ -322,7 +329,7 @@ col_2 <- function(...) {
 
 #' Column wrapper (1)
 #'
-#' @export
+#' @keywords internal
 #'
 #' @importFrom shiny column
 col_1 <- function(...) {
@@ -340,7 +347,8 @@ col_1 <- function(...) {
 #' on the server side.
 #'
 #' @return The modified tag with an extra id and the action button class.
-#' @export
+#'
+#' @keywords internal
 #'
 #' @examples
 #' if (interactive()) {
@@ -410,7 +418,8 @@ make_action_button <- function(tag, inputId = NULL) {
 #' #' Load rendered RMarkdown from a file and turn into HTML.
 #' #'
 #' #' @rdname includeRMarkdown
-#' #' @export
+#' #'
+#' #' @keywords internal
 #' #'
 #' #' @importFrom rmarkdown render
 #' #' @importFrom markdown markdownToHTML

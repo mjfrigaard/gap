@@ -12,3 +12,4 @@ jq_hide(id)
 \description{
 Hide an elements by calling jquery hide on it
 }
+\keyword{internal}

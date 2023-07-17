@@ -12,3 +12,4 @@ Removes the null from a vector
 \examples{
 drop_nulls(list(1, NULL, 2))
 }
+\keyword{internal}

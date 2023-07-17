@@ -37,3 +37,4 @@ if (interactive()) {
   shinyApp(ui, server)
 }
 }
+\keyword{internal}

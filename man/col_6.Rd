@@ -9,3 +9,4 @@ col_6(...)
 \description{
 Column wrapper (6)
 }
+\keyword{internal}

@@ -1,6 +1,6 @@
 #' Inverted versions of in, is.null and is.na
 #'
-#' @export
+#' @keywords internal
 #'
 #' @rdname not_in
 #'
@@ -15,22 +15,22 @@
 #'
 #' @rdname not_null
 #'
-#' @export
+#' @keywords internal
 not_null <- function(x) {
   !is.null(x)
 }
 
 #' Inverted versions of in is.na
-#' @export
 #'
 #' @rdname not_na
 #'
+#' @keywords internal
 not_na <- function(x) {
   !is.na(x)
 }
 #' Removes the null from a vector
 #'
-#' @export
+#' @keywords internal
 #'
 #' @rdname drop_nulls
 #'
@@ -44,7 +44,7 @@ drop_nulls <- function(x) {
 #'
 #' @param x,y Two elements to test, one potentially `NULL`
 #'
-#' @export
+#' @keywords internal
 #'
 #' @rdname if_x_NULL_y
 #'
@@ -70,7 +70,7 @@ drop_nulls <- function(x) {
 #'
 #' @name if_x_NA_y
 #'
-#' @export
+#' @keywords internal
 #'
 #' @examples
 #' NA %|NA|% 1
@@ -87,7 +87,7 @@ drop_nulls <- function(x) {
 #' @importFrom shiny reactiveValues
 #' @inheritParams shiny::reactiveValues
 #'
-#' @export
+#' @keywords internal
 #'
 rv <- function(...) shiny::reactiveValues(...)
 
@@ -96,6 +96,6 @@ rv <- function(...) shiny::reactiveValues(...)
 #' @importFrom shiny reactiveValuesToList
 #' @inheritParams shiny::reactiveValuesToList
 #'
-#' @export
+#' @keywords internal
 #'
 rvtl <- function(...) shiny::reactiveValuesToList(...)

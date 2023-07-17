@@ -22,3 +22,4 @@ undisplay(a)
 b <- shiny::actionButton("go_filter", "go")
 undisplay(b)
 }
+\keyword{internal}

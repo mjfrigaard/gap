@@ -16,3 +16,4 @@ If x is `NA`, return y, otherwise return x
 \examples{
 NA \%|NA|\% 1
 }
+\keyword{internal}

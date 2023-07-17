@@ -20,3 +20,4 @@ Turn an R list into corresponding HTML paragraph tags
 \examples{
 list_to_p(c("This is the first paragraph", "this is the second paragraph"))
 }
+\keyword{internal}

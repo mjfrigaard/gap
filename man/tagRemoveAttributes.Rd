@@ -21,3 +21,4 @@ Remove a tag attribute
 a <- shiny::tags$p(src = "plop", "pouet")
 tagRemoveAttributes(a, "src")
 }
+\keyword{internal}

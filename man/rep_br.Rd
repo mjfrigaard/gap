@@ -18,3 +18,4 @@ Repeat tags$br
 \examples{
 rep_br(5)
 }
+\keyword{internal}

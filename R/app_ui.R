@@ -5,8 +5,7 @@
 #' @importFrom shiny fluidPage h1 sidebarLayout sidebarPanel h6 em a
 #' @importFrom shiny mainPanel fluidRow p img
 #'
-#'
-#' @export
+#' @keywords internal
 app_ui <- function(request) {
   shiny::tagList(
     # Leave this function for adding external resources
@@ -48,8 +47,10 @@ app_ui <- function(request) {
 #' resources inside the Shiny application.
 #'
 #' @import shiny
+#'
 #' @importFrom golem add_resource_path activate_js favicon bundle_resources
-#' @noRd
+#'
+#' @keywords internal
 golem_add_external_resources <- function() {
   add_resource_path(
     "www",

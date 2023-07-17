@@ -9,3 +9,4 @@ not_na(x)
 \description{
 Inverted versions of in is.na
 }
+\keyword{internal}

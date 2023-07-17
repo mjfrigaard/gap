@@ -10,3 +10,4 @@ col_12(...)
 These are convenient wrappers around
 `column(12, ...)`
 }
+\keyword{internal}

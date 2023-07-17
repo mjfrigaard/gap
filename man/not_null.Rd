@@ -9,3 +9,4 @@ not_null(x)
 \description{
 Inverted versions of is.null
 }
+\keyword{internal}

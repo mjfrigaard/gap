@@ -13,3 +13,4 @@ Inverted versions of in, is.null and is.na
 1 \%not_in\% 1:10
 
 }
+\keyword{internal}

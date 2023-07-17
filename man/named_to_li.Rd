@@ -9,3 +9,4 @@ named_to_li(list, class = NULL)
 \description{
 Names list
 }
+\keyword{internal}

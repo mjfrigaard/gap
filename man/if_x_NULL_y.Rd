@@ -16,3 +16,4 @@ If x is `NULL`, return y, otherwise return x
 \examples{
 NULL \%||\% 1
 }
+\keyword{internal}

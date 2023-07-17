@@ -13,3 +13,4 @@ DO NOT REMOVE.}
 \description{
 The application User-Interface
 }
+\keyword{internal}
