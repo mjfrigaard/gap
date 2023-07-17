@@ -166,7 +166,7 @@ test_that("Test columns wrappers works", {
 
 test_that("Test make_action_button works", {
   button <- make_action_button(
-    a(href = "#", "My super link", style = "color: lightblue;"),
+    shiny::a(href = "#", "My super link", style = "color: lightblue;"),
     inputId = "mylink"
   )
   expect_s3_class(button, "shiny.tag")

@@ -11,17 +11,6 @@ mod_plot_ui <- function(id) {
   ns <- shiny::NS(id)
   shiny::tagList(
     shiny::tags$br(),
-    shiny::tags$blockquote(
-      shiny::tags$em(
-        shiny::tags$h6(
-          "The code for this application comes from the ",
-          shiny::tags$a("Building web applications with Shiny",
-            href = "https://rstudio-education.github.io/shiny-course/"
-          ),
-          "tutorial"
-        )
-      )
-    ),
     shiny::plotOutput(outputId = ns("scatterplot"))
   )
 }
@@ -29,7 +18,7 @@ mod_plot_ui <- function(id) {
 #' plot Server Functions
 #'
 #' @param id module id
-#' @param var_inputs inputs from mod_var_input
+#' @param var_inputs inputs from mod_var
 #'
 #' @return shiny server module
 #' @export mod_plot_server

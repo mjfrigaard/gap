@@ -5,11 +5,11 @@
 #' @param id
 #'
 #' @return shiny UI module
-#' @export mod_var_input_ui
+#' @export mod_var_ui
 #'
 #' @importFrom shiny NS tagList selectInput
 #' @importFrom shiny sliderInput textInput
-mod_var_input_ui <- function(id) {
+mod_var_ui <- function(id) {
   ns <- shiny::NS(id)
   shiny::tagList(
     shiny::selectInput(
@@ -73,10 +73,10 @@ mod_var_input_ui <- function(id) {
 #' @param id
 #'
 #' @return shiny server module
-#' @export mod_var_input_server
+#' @export mod_var_server
 #'
 #' @importFrom shiny NS moduleServer reactive
-mod_var_input_server <- function(id) {
+mod_var_server <- function(id) {
 
   shiny::moduleServer(id, function(input, output, session) {
     return(
@@ -105,7 +105,7 @@ mod_var_input_server <- function(id) {
 }
 
 ## To be copied in the UI
-# mod_var_input_ui("var_input_1")
+# mod_var_ui("var_input_1")
 
 ## To be copied in the server
-# mod_var_input_server("var_input_1")
+# mod_var_server("var_input_1")

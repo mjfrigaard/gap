@@ -9,7 +9,7 @@ mod_plot_server(id, var_inputs)
 \arguments{
 \item{id}{module id}
 
-\item{var_inputs}{inputs from mod_var_input}
+\item{var_inputs}{inputs from mod_var}
 }
 \value{
 shiny server module

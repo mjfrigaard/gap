@@ -21,7 +21,7 @@ app_sys <- function(...) {
 #' @param use_parent Logical, scan the parent directory for config file.
 #' @param file Location of the config file
 #'
-#' @noRd
+#' @export
 get_golem_config <- function(
   value,
   config = Sys.getenv(

@@ -18,18 +18,13 @@ test_that("app server", {
   }
 })
 
-test_that(
-  "app_sys works",
-  {
+test_that(desc = "app_sys works", code = {
     expect_true(
       app_sys("golem-config.yml") != ""
     )
-  }
-)
+  })
 
-test_that(
-  "golem-config works",
-  {
+test_that(desc = "golem-config works", code = {
     config_file <- app_sys("golem-config.yml")
     skip_if(config_file == "")
 
@@ -44,15 +39,12 @@ test_that(
       get_golem_config(
         "app_prod",
         config = "dev",
-        file = config_file
-      )
-    )
-  }
-)
+        file = config_file))
+  })
 
 # Configure this test to fit your need.
 # testServer() function makes it possible to test code in server functions and modules, without needing to run the full Shiny application
-testServer(app_server, {
+shiny::testServer(app_server, {
 
   # Set and test an input
   session$setInputs(x = 2)
@@ -66,9 +58,7 @@ testServer(app_server, {
 })
 
 # Configure this test to fit your need
-test_that(
-  "app launches",
-  {
+test_that(desc = "app launches", code = {
     golem::expect_running(sleep = 5)
   }
 )

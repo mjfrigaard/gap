@@ -2,29 +2,39 @@
 #'
 #' @param request Internal parameter for `{shiny}`.
 #'     DO NOT REMOVE.
-#' @import shiny
-#' @noRd
+#' @importFrom shiny fluidPage h1 sidebarLayout sidebarPanel h6 em a
+#' @importFrom shiny mainPanel fluidRow p img
+#'
+#'
+#' @export
 app_ui <- function(request) {
   shiny::tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
     shiny::fluidPage(
-      shiny::tags$h1("gap"),
       shiny::sidebarLayout(
         shiny::sidebarPanel(
-          mod_var_input_ui("vars")
+          mod_var_ui("vars"),
+          shiny::h6(
+            shiny::img(src = "www/shiny.png", width = '15%'),
+            shiny::em(
+              "The data for this application comes from the ",
+              shiny::a("Building web applications with Shiny",
+                href = "https://rstudio-education.github.io/shiny-course/"
+              ),
+              "tutorial"
+            )
+          )
         ),
         shiny::mainPanel(
-          # add shiny hex in www/
-          shiny::tags$img(src = "www/shiny.png"),
           mod_plot_ui("plot"),
-          # add golem hex (in www/images/)
           shiny::fluidRow(
-            shiny::tags$em(shiny::tags$h4(
-              "Brought to you by: ",
-              shiny::tags$img(src = "www/images/golem-hex.png")
-            ))
+            shiny::p(
+              shiny::em("Brought to you by: "),
+              # add golem hex (in www/images/)
+              shiny::img(src = "www/images/golem-hex.png", width = '5%')
+            )
           )
         )
       )
