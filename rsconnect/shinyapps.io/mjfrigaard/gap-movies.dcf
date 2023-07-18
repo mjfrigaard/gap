@@ -1,0 +1,11 @@
+name: gap-movies
+title:
+username:
+account: mjfrigaard
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9468261
+bundleId: 7466839
+url: https://mjfrigaard.shinyapps.io/gap-movies/
+when: 1689614282.72775
+lastSyncTime: 1689614282.72776
