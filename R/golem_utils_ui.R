@@ -306,7 +306,7 @@ col_8 <- function(...) {
 #'
 #' @param ... arguments from `shiny::column()`
 #'
-#' @keywords internal
+#' @export
 #'
 #' @importFrom shiny column
 col_6 <- function(...) {
